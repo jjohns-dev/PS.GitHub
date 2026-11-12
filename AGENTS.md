@@ -94,7 +94,7 @@ PS.GitHub/
     dependabot.yml
     CODEOWNERS
   .vscode/               editor settings + PSScriptAnalyzer rules
-  Build/                 PSake harness (build.ps1 -> build.psake.ps1)
+  Build/                 build.ps1 shim for the shared pwsh-module-ci harness (see its consumer guide, "Running the build locally")
   Public/                one .ps1 per exported function, Verb-Noun.ps1
   Private/               internal helpers, NOT exported
   Tests/                 Pester tests, Tests/Unit/<Function>.tests.ps1
