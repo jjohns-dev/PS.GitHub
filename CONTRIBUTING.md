@@ -94,8 +94,11 @@ function Verb-Noun {
 
 ## Running the build locally
 
-The build harness lives under [`Build/`](Build/) and wraps PSake. First-time
-setup installs Pester, psake, and PSScriptAnalyzer:
+`./Build/build.ps1` is a shim for the shared
+[`pwsh-module-ci`](https://github.com/jjohns-dev/pwsh-module-ci) build harness,
+pinned to the version in `.github/workflows/ci.yml`; see the consumer guide's
+[Running the build locally](https://github.com/jjohns-dev/pwsh-module-ci/blob/main/docs/consumer-guide.md#running-the-build-locally).
+First-time setup installs Pester, psake, and PSScriptAnalyzer:
 
 ```powershell
 ./Build/build.ps1 -ResolveDependency -TaskList Init

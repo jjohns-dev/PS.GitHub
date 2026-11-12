@@ -4,6 +4,10 @@
 
 Accepted — 2026-07-02
 
+The vendored PSake build described below was replaced by the shared
+`pwsh-module-ci` harness from v2; see
+[pwsh-module-ci ADR-0006](https://github.com/jjohns-dev/pwsh-module-ci/blob/main/docs/adr/0006-host-the-build-harness-in-this-repo.md).
+
 ## Context
 
 `PS.GitHub` is a PowerShell 7 module. PowerShell 7 targets .NET and runs
