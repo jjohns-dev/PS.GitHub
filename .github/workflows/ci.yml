@@ -15,8 +15,8 @@ jobs:
   validate:
     uses: jjohns-dev/pwsh-module-ci/.github/workflows/ci.yml@v2
     with:
-      # All three legs collect the same count, so one flat floor covers them.
-      min-tests: 107 # 112 collected - min(floor(112 * 0.05), 10) = 112 - 5
+      # All three legs execute the same count, so one flat floor covers them.
+      min-tests: 119 # 125 executed - min(floor(125 * 0.05), 10) = 125 - 6
     permissions:
       contents: read
       checks: write
