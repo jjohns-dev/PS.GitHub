@@ -88,7 +88,7 @@ that violates them should be flagged in review.
 PS.GitHub/
   .devcontainer/         devcontainer + Dockerfile (installs gh CLI)
   .github/
-    workflows/ci.yml     Pester + PSScriptAnalyzer, matrix on ubuntu + windows + macos
+    workflows/ci.yml     Pester + PSScriptAnalyzer, matrix on ubuntu + windows
     workflows/release.yml   fires on `v*.*.*` tag push; creates GitHub Release with .zip artifact
     release.yml          auto-generated-release-notes categorization by PR label
     dependabot.yml
