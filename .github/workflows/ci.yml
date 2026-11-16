@@ -15,8 +15,9 @@ jobs:
   validate:
     uses: jjohns-dev/pwsh-module-ci/.github/workflows/ci.yml@v2
     with:
-      # All three legs execute the same count, so one flat floor covers them.
-      min-tests: 119 # 125 executed - min(floor(125 * 0.05), 10) = 125 - 6
+      os-matrix: '["ubuntu-latest", "windows-latest"]'
+      # Both legs execute the same count, so one flat floor covers them.
+      min-tests: 143 # 150 executed - min(floor(150 * 0.05), 10) = 150 - 7
     permissions:
       contents: read
       checks: write
